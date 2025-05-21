@@ -56,7 +56,7 @@ def get_from_database():
     # rows=cursor.fetchall()
     # for row in rows[6:]:
     #     get_data(row[0])
-    urls=['https://phonedb.net/index.php?m=processor&id=972&c=mediatek_dimensity_7300_mt6878']
+    urls=['the website...not disclosing it here']
     for url in urls:
         get_data(url)
 
