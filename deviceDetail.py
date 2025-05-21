@@ -10,7 +10,7 @@ conn=mysql.connector.connect(
 )
 
 cursor=conn.cursor()
-base_url='https://phonedb.net'
+base_url='website ..not disclosing it here'
 
 # column_list=['A','B','C','D']
 
@@ -92,7 +92,7 @@ headers = {
 
 
               
-# r=requests.get('https://phonedb.net/index.php',params=params, cookies=cookies, headers=headers,verify=False)
+# r=requests.get('website_link',params=params, cookies=cookies, headers=headers,verify=False)
 # soup=BeautifulSoup(r.text,'html.parser')
 
 # # seq=input("enter the sequence number:")
@@ -142,7 +142,7 @@ def find_link(td_tag):
 
 
 
-# url='https://phonedb.net/index.php?m=device&id=23902&c=sharp_aquos_sense_9_5g_td-lte_id_sh-m29id_256gb__sharp_naze&d=detailed_specs'
+
 def Page_detail(url):
     r=requests.get(url, cookies=cookies, headers=headers,verify=False)
     soup=BeautifulSoup(r.text,'html.parser')
@@ -209,7 +209,7 @@ def insert_into_database(final_list):
 # cursor.close()
 # conn.close()
 
-urls=['https://phonedb.net/index.php?m=device&id=23546&c=nothing_cmf_phone_1_5g_premium_edition_global_dual_sim_td-lte_256gb_a015__nothing_tetris&d=detailed_specs','https://phonedb.net/index.php?m=device&id=23545&c=nothing_cmf_phone_1_5g_premium_edition_global_dual_sim_td-lte_128gb_a015__nothing_tetris&d=detailed_specs','https://phonedb.net/index.php?m=device&id=23544&c=nothing_cmf_phone_1_5g_standard_edition_global_dual_sim_td-lte_128gb_a015__nothing_tetris&d=detailed_specs']
+urls=[]
 for url in urls:
     # print(url)
     Page_detail(url)
